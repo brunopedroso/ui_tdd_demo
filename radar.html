@@ -10,6 +10,27 @@
 	</div>
 
 	<script type="text/javascript" charset="utf-8">
+
+		function Radar() {
+			this.paper = Raphael('radar', 300, 300);			
+		}
+		
+		Radar.prototype = {
+			desenhaEixos: function() {
+				var eixos = [];
+
+				for(var i=0; i<7 ; i++) {
+					eixos[i] = this.paper.path('M150 150,L150 20');
+					eixos[i].rotate(i*30,150,150);
+				}
+
+			}	
+		};
+		
+		
+		var radar = new Radar();
+		radar.desenhaEixos();
+
 	</script>
 	
 </body>

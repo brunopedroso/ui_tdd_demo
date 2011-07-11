@@ -1,0 +1,5 @@
+eixos
+	√ 1 eixo
+	√ 2 eixos
+	- n eixos
+marca
